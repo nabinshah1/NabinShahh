@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabin Shah | Webpage Developer</title>
+
+<style>
+:root{
+  --bg:#0b1120;
+  --card:#111827;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{color:var(--accent); text-decoration:none;}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(2,6,23,.85);
+  backdrop-filter: blur(10px);
+  padding:14px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  z-index:100;
+}
+
+section{
+  padding:90px 10%;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+  box-shadow:0 0 25px rgba(56,189,248,.6);
+}
+
+.hero h1{font-size:2.5rem;margin-top:15px;}
+.hero h3{color:var(--accent);margin:6px 0;}
+.hero p{max-width:600px;margin:auto;}
+
+.btns{
+  margin-top:20px;
+}
+.btn{
+  padding:10px 20px;
+  border-radius:30px;
+  margin:5px;
+  border:1px solid var(--accent);
+  background:transparent;
+  color:var(--accent);
+  cursor:pointer;
+  transition:.3s;
+}
+.btn:hover{
+  background:var(--accent);
+  color:#000;
+}
+
+h2{
+  color:var(--accent);
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+}
+
+ul{padding-left:20px;}
+
+footer{
+  background:#020617;
+  padding:20px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#values">Values</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <div>
+    <img src="image.jpg" alt="Nabin Shah">
+    <h1>Nabin Shah</h1>
+    <h3>Webpage Developer</h3>
+    <p>Designing clean, modern and user-focused web experiences using modern UI principles.</p>
+    <div class="btns">
+      <button class="btn" onclick="scrollToSection('services')">View Services</button>
+      <button class="btn" onclick="scrollToSection('contact')">Contact Me</button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a passionate Webpage Developer from Ramaroshan, Achham, Nepal with a strong foundation
+in frontend development, UI design, and web technologies. I have 2 years of teaching
+experience at NACIT, helping students build real-world projects while focusing on clean
+code, performance, and user experience.
+</p>
+</section>
+
+<section id="achievements">
+<h2>Personal Achievements</h2>
+<div class="grid">
+  <div class="card">2 years teaching experience at NACIT</div>
+  <div class="card">Developed Parking Management System using Java & PHP</div>
+  <div class="card">Implemented doubly linked list & time tracking system</div>
+  <div class="card">Completed Advanced Diploma in Information Technology</div>
+</div>
+</section>
+
+<section id="values">
+<h2>Core Values</h2>
+<div class="grid">
+  <div class="card">Integrity</div>
+  <div class="card">Discipline</div>
+  <div class="card">Teamwork</div>
+  <div class="card">Responsibility</div>
+  <div class="card">Continuous Learning</div>
+  <div class="card">Innovation</div>
+  <div class="card">Respect</div>
+  <div class="card">Excellence</div>
+  <div class="card">Leadership</div>
+  <div class="card">Customer Focus</div>
+</div>
+</section>
+
+<section id="services">
+<h2>My Services</h2>
+<div class="grid">
+  <div class="card">Webpage Designing</div>
+  <div class="card">Frontend Designing</div>
+  <div class="card">UI Designing</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:shahnabin141@gmail.com">shahnabin141@gmail.com</a></p>
+<p>Facebook: <a href="https://www.facebook.com/nabin.b.shah.7">Visit Profile</a></p>
+<p>YouTube: <a href="https://www.youtube.com/@ThakuiIteducationNp">Visit Channel</a></p>
+</section>
+
+<footer>
+© 2026 Nabin Shah • Webpage Developer
+</footer>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
